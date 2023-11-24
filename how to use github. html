@@ -1,0 +1,53 @@
+
+to download file for github by using command 
+//git clone url(https)
+
+to add a file to github 
+1. git add filename
+2. git commit -m "message"
+3. git status
+4. git push
+
+//step 1 and 2 can combine to git commit -am 'message'
+
+git add . upload all files/folder
+
+uesing .gitignore to ignore and don't upload node_modules 
+
+download the lastest vision file in github
+git pull
+
+merge conflict
+(Your local changes to the following files would be overwritten by merge:
+	learning.html
+Please commit your changes or stash them before you merge.
+)
+step 1. git config pull.rebase true
+step 2. git rebase --continue
+step 3. git commit -am 'message'
+step 4. git push
+
+
+
+git log track all the changes in the file
+
+
+git reset 
+//reset 
+
+
+git branch 
+//to tell how many brach you have now
+* means which branch you are on
+
+git checkout -b branchName
+//switch to a new branch with asign branchName above command
+
+git checkout branch branchName
+//switch to the existing branch
+
+
+merge both branch together
+like 
+git merge style
+//means style file merge to main file 

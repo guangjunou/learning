@@ -88,9 +88,13 @@ git push
 
 to push a new branch to the github
 1. after git commit
-2. go to github and create a new repository and copy the link
-3. git remote add name url
+(2. go to github and create a new repository and copy the link) no need
+(3. git remote add name url) no need
 4. git push name branchname
+5. go to github click pull request
+6. create pull request
+7. merge branch to the main branch
+click the merge button and comfirm merge
 
 
 from local to github

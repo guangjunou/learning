@@ -1,6 +1,24 @@
+git add origin url from github
 
+git remote 
+//give a list of remote repositories that are currently linked
+
+git remote -v
+// to see more detail/ url
+
+to remove the remote repositories
+git remote remove origin
+//origin is the remote repository name
+
+
+start from github
 to download file for github by using command 
 //git clone url(https)
+
+to download a existen to computer and create a new folder
+//git clone url(https)  foldername 
+
+//folder name is what you want to put to
 
 to add a file to github 
 1. git add filename
@@ -27,6 +45,12 @@ step 2. git rebase --continue
 step 3. git commit -am 'message'
 step 4. git push
 
+//to overwritte the message 
+1. git commit --amend -m 'message'
+2. git push origin main -f
+//force push/ it can overwritte when you mix up the history
+
+
 
 
 git log track all the changes in the file
@@ -40,14 +64,90 @@ git branch
 //to tell how many brach you have now
 * means which branch you are on
 
+git branch branchName
+//to create a new branch
+
 git checkout -b branchName
 //switch to a new branch with asign branchName above command
 
-git checkout branch branchName
+git checkout branchName
 //switch to the existing branch
 
 
 merge both branch together
+we need to change back to main branch
 like 
-git merge style
+git merge style/branchName -m 'message'
 //means style file merge to main file 
+
+when facing the merge conflict from branches
+delete any that you dont want 
+git add .
+git commite -m 'message'
+git push
+
+to push a new branch to the github
+1. after git commit
+2. go to github and create a new repository and copy the link
+3. git remote add name url
+4. git push name branchname
+
+
+from local to github
+1. git init
+//it sets up git inside this folder
+git config --global user.name 'your name'
+git config --global user.email 'your email'
+2. git status 
+//what changes 
+3. git add filename/folder
+or git add . 
+//add all in current folder and sub folders
+4. git commit -m 
+5. git push
+
+if you want to add one more file, 
+1.git add .
+2. git commit -m 'message' --amend
+
+
+to reset 
+1. git reset file/folder
+2. git reset .
+
+git checkout -- file name
+git checkout -- .
+//undo all the changes
+
+to go back 以前	version
+1. git log
+2 copy the commit number
+3 git checkout commit number
+then it will go back pervious version
+or git checkout commit number filename/folder 
+//in this case it wont create a new branch
+
+git log --all
+//will show all versions that we had earlier even you had go back pervious version
+
+q to quit
+
+git log --all --graph
+//to see all the branch
+
+git s => git status
+git cm => git commit -m
+git co => git checkout
+git config -global alias.s 'status'
+git config --global alias.cm 'commit -m'
+git config --global alias.co 'checkout'
+
+how to ingore file 
+
+
+how to remove the git in the project
+
+rm -rf .git
+
+
+
